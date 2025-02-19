@@ -249,7 +249,7 @@ torch.save(model.state_dict(), 'model-ckpt.pt')
 
 # Generate
 model.eval()
-start = 'An investor in stock'
+start = 'An stock investor'
 start_ids = encoding.encode(start)
 x = (torch.tensor(start_ids, dtype=torch.long, device=device)[None, ...])
 y = model.generate(x, max_new_tokens=100)
