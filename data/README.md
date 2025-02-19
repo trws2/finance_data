@@ -1,0 +1,2 @@
+- beating-the-street-conv.txt is raw text from Peter Lynch's famous book [Beating the Street](https://yourknowledgedigest.org/wp-content/uploads/2020/04/beating-the-street-.pdf)
+- download_nasdaq_historical_data.py is a script to download historical nasdaq stock price data from [Yahoo Finance](https://www.kaggle.com/code/jacksoncrow/download-nasdaq-historical-data)
