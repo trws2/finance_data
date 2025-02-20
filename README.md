@@ -1,6 +1,6 @@
 # Generate texts from Peter Lynch's books
 
-The repo is for building a LLM from stratch using two books written by Peter Lynch.
+The repository is for building a LLM from stratch using two books written by Peter Lynch.
 
 Output:
 ```
