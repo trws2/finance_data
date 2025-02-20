@@ -1,1 +1,3 @@
 model-ckpt.pt
+data/beating-the-street-conv.txt
+data/one-up-on-wall-street-conv.txt
