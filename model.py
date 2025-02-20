@@ -23,7 +23,12 @@ torch.manual_seed(TORCH_SEED)
 
 # Load training data
 with open('data/beating-the-street-conv.txt', 'r', encoding='utf-8') as f:
-    text = f.read()
+    text1 = f.read()
+
+with open('data/one-up-on-wall-street-conv.txt', 'r', encoding='utf-8') as f:
+    text2 = f.read()
+
+text = text1 + text2
 
 # Using TikToken (Same as GPT3) to tokenize the source text
 encoding = tiktoken.get_encoding("cl100k_base")
@@ -249,7 +254,7 @@ torch.save(model.state_dict(), 'model-ckpt.pt')
 
 # Generate
 model.eval()
-start = 'An stock investor'
+start = 'Spinoffs of divisions or parts of companies into separate, '  # a reference from the book
 start_ids = encoding.encode(start)
 x = (torch.tensor(start_ids, dtype=torch.long, device=device)[None, ...])
 y = model.generate(x, max_new_tokens=100)
